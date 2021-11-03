@@ -1,22 +1,20 @@
-/*===============================================================================
-|---------------------------[  Scroll Animation ]-------------------------------|
-================================================================================*/
-ScrollReveal().reveal('.sobremi', { delay: 200 });
+const scrollProgress = document.getElementById('scroll-progress');
+const height =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-/*===============================================================================
-|---------------------------[  Animacion Ancla ]--------------------------------|
-================================================================================*/
-// JQuery
-$(function(){
-    $('a[href*=#]').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')&& location.hostname == this.hostname) {
-            var $target = $(this.hash);
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-            if ($target.length) {
-                var targetOffset = $target.offset().top;
-                $('html,body').animate({scrollTop: targetOffset}, 800);
-                return false;
-            }
-        }
-    });
+window.addEventListener('scroll', () => {
+  const scrollTop =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
+
+
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
+
