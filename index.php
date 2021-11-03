@@ -141,6 +141,33 @@
                 </div>
                 <!-- Card -->
                 <div class="card ">
+                    <a href="trabajos/bootstrap/" target="_blank" rel="noopener noreferrer">
+                        <div class="img"><img src="assets/img/trabajos/bootstrap.png" alt="Web bootstrap"></div>
+                        <div class="card-title">Web con Bootstrap</div>
+                        <div class="card-description">Una landing page basica hecha con bootstrap .</div>
+                        <div class="technologies">
+                            <img src="assets/img/icons/js.svg" alt="JS">
+                            <img src="assets/img/icons/html.svg" alt="HTML">
+                            <img src="assets/img/icons/css.svg" alt="CSS">
+                            <img src="assets/img/icons/bootstrap.png" alt="BOOTSTRAP">
+                        </div>
+                    </a>
+                </div>
+                <!-- Card -->
+                <div class="card ">
+                    <a href="trabajos/portfolioV1/" target="_blank" rel="noopener noreferrer">
+                        <div class="img"><img src="assets/img/trabajos/portfolio.png" alt="Mi primer portfolio"></div>
+                        <div class="card-title">Mi primer Portfolio</div>
+                        <div class="card-description">Este fue el primer diseño de portfolio que tenía, con conocimientos más básicos.</div>
+                        <div class="technologies">
+                            <img src="assets/img/icons/js.svg" alt="JS">
+                            <img src="assets/img/icons/html.svg" alt="HTML">
+                            <img src="assets/img/icons/css.svg" alt="CSS">
+                        </div>
+                    </a>
+                </div>
+                <!-- Card -->
+                <div class="card ">
                     <a href="trabajos/Piano/" target="_blank" rel="noopener noreferrer">
                         <div class="img"><img src="assets/img/trabajos/piano.jpg" alt="APP Piano"></div>
                         <div class="card-title">Piano Online</div>
@@ -153,9 +180,11 @@
                     </a>
                 </div>
                 
+                
             </div>
         </div>
     </section>
+    <!-- Seccion de skills -->
     <section class="skills" id="skills">
         <div class="skills-title ">
             <img src="assets/img/icons/skills.png" alt="Skills">
@@ -217,6 +246,14 @@
                         <img src="assets/img/icons/github.png" alt="GITHUB">
                         GitHub
                     </div>
+                    <div class="skill ">
+                        <img src="assets/img/icons/blogger.png" alt="Blogger">
+                        Blogger
+                    </div>
+                    <div class="skill ">
+                        <img src="assets/img/icons/wordpress.png" alt="WordPress">
+                        WordPress
+                    </div>
                 </div>
             </div>
             <!-- Learning -->
@@ -232,6 +269,10 @@
                     <div class="skill ">
                         <img src="assets/img/icons/laravel.png" alt="LARAVEL">
                         Laravel
+                    </div>
+                    <div class="skill ">
+                        <img src="assets/img/icons/woocommerce.png" alt="WooCommerce">
+                        WooCommerce
                     </div>
                 </div>
             </div>

@@ -286,8 +286,9 @@ nav .container .menu ul li a:hover{
 .skills .skills-container .skill{
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: auto;
     text-align: center;
+    align-items: center;
     font-size: 0.8rem;
     margin: 15px;
 }
