@@ -99,7 +99,7 @@ nav .container .menu ul li a:hover{
 .home {
     padding-top: 4rem;
     color: var(--withe);
-    height: 100vh;
+    height: 100%;
     display: flex;
 }
 .video-background{
@@ -121,7 +121,7 @@ nav .container .menu ul li a:hover{
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     z-index: 0;
-    background: #000000e8;
+    background: #000000ea;
 }
 .home .container .home-left{
     padding: 80px ;
@@ -184,7 +184,7 @@ nav .container .menu ul li a:hover{
     width: 50px;
 }
 .proyects .title {
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
     font-weight: 600;
 }
@@ -198,7 +198,7 @@ nav .container .menu ul li a:hover{
     flex-wrap: wrap;
 }
 .proyects .proyects-list .card{
-    display: inline-table;
+    display: flex;
     flex-direction: column;
     width: 250px;
     max-width: 250px;
@@ -220,7 +220,7 @@ nav .container .menu ul li a:hover{
 }
 .proyects .proyects-list .card .card-title {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 0.7rem 1rem;
     color: var(--black);
 }
@@ -258,7 +258,7 @@ nav .container .menu ul li a:hover{
     padding-left: 130px;
     border-bottom: var(--verdeOscuro) solid 4px;
     width: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 .skills .skills-title img {
     width: 40px;
@@ -272,7 +272,7 @@ nav .container .menu ul li a:hover{
     background: var(--black);
     border-radius: 5px;
     width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     padding: 3px;
     
@@ -286,8 +286,9 @@ nav .container .menu ul li a:hover{
 .skills .skills-container .skill{
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: auto;
     text-align: center;
+    align-items: center;
     font-size: 0.8rem;
     margin: 15px;
 }
@@ -395,4 +396,58 @@ footer .credits {
 }
 footer .credits a {
     color: #f2f2f246;
+}
+/*========================================================================
+|---------------------------[  Version Movil   ]------------------------------|
+=========================================================================*/
+
+@media (max-width: 1024px){
+    nav .container .logo {
+        display: none;
+    }
+    nav .container .menu{
+        border-left: none;
+    }
+    .home .container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .home .container .home-right{
+        padding-top: 0px;
+    }
+    .home .container .home-right .img{
+        display: flex;
+        place-content: center;
+    }
+    .home .container .home-right .img img{
+        width: 50%;
+    }
+    .home .container .home-left{
+        padding: 10px 20px;
+    }
+    .home .container .home-left h1 {
+        text-align: center;
+    }
+    .home .container .home-left .buttons{
+        place-content: center;
+    }
+    .proyects .description{
+        margin: 0;
+        padding: 10px 60px;
+    }
+    .skills .skills-container{
+        margin-top: 10px;
+    }
+    .contactme .contactme-modules{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactme .contactme-modules .contact{
+        padding: 0;
+        place-content: center;
+    }
+    .contactme .contactme-modules .form{
+        padding: 10px 30px;
+    }
 }
